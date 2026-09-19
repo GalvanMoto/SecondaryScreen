@@ -17,8 +17,7 @@
 - **🎨 Liquid Retina Color Matching**: Calibrated `sRGB` color space output with lossy compression tuning matching the MacBook Air / Pro Liquid Retina screen.
 - **👆 Real-Time Touch Input**: Multi-touch and drag coordinates streamed back over USB and injected directly as macOS `CGEvent` mouse clicks and drags.
 - **🔄 Dynamic Resolution & Auto-Rotation**: Single-tap rotation dynamically switching between Portrait (`1080×2400`) and Landscape (`2400×1080`) virtual displays.
-- **🚀 Zero-Lag Frame Backpressure**: Non-blocking frame-dropping algorithm preventing TCP socket buffer congestion and audio/visual lag.
-- **💻 ADB Web Command Center**: Included Next.js real-time telemetry dashboard for managing connected devices, SQLite logs, screen mirroring, shell commands, and AI Copilot.
+- **🚀 Zero-Lag Frame Backpressure**: Non-blocking frame-dropping algorithm preventing TCP socket buffer congestion and visual lag.
 
 ---
 
@@ -55,7 +54,6 @@
 | **Android Kotlin Client** | [`android-client/`](android-client/) | Full Gradle/Android Studio Kotlin client project. |
 | **iOS Swift Client** | [`ios-client/`](ios-client/) | SwiftUI client for turning iPhones and iPads into secondary Mac displays. |
 | **Signed Android APK** | [`SecondaryScreen.apk`](SecondaryScreen.apk) | Pre-compiled, signed APK ready to install via ADB. |
-| **Next.js Command Center** | [`src/`](src/) | Full-stack ADB management dashboard with screen mirroring and telemetry. |
 | **Automation Scripts** | [`scripts/`](scripts/) | One-click launch, build, and installation scripts. |
 
 ---
@@ -91,17 +89,6 @@ Tap the **Secondary Screen** app on your phone. Your Mac desktop will appear ins
 - **`📱 Notch: Wrap`**: Toggles between edge-to-edge drawing around the camera punch-hole and safe-area padding below the cutout.
 - **`🔄 Rotate`**: Switches orientation dynamically between Portrait (`1080x2400`) and Landscape (`2400x1080`).
 - **Touch Screen**: Tap or drag anywhere on the phone screen to control macOS windows and cursor.
-
----
-
-## 🛠️ Next.js Web Command Center (Optional)
-
-To run the web-based ADB device manager and screen controller:
-```bash
-npm install
-npm run dev
-```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
