@@ -39,3 +39,22 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Swift build artifacts
+macos-host/.build/
+.build/
+*.xcodeproj/
+*.xcworkspace/
+
+# Android build artifacts
+android-app/build/
+android-app/classes.dex
+*.apk.idsig
+android-client/.gradle/
+android-client/build/
+android-client/app/build/
+
+# Local testing artifacts
+*.png
+data/
+scratch/
